@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: cyan;
+        margin: 0px;
+        }
+
+        header{
+            background-color: rgba(0, 0, 230, 0.719);
+            padding: 10px 10px;
+            margin: 10px;
+        }
+        header > div > h1{
+            display: inline;
+            height: 100px;
+            width: 184px;
+            font-family: fantasy;
+            font-size: 50px;
+            text-shadow: 1px 1px 5px rgb(0 0 0 / 60%);
+            margin: 10px auto;
+            padding: 10px;
+                    
+        }
+
+        div#bola{
+            background-color: rgba(0, 0, 0, 0.507);
+            height: 130px;
+            width: 130px;
+            border-radius: 50%;
+            margin: 30px auto;
+            padding: 10px;
+        }
+        
+
+        nav{
+            margin: 10px;
+        }
+        nav > a{
+            display: inline-flex;
+            font-family: monospace;
+            background-color: rgb(66, 94, 146);
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            padding: 1px 7px ;
+            border: 5px solid rgb(54, 9, 95);
+            margin: 1px;
+
+        }
+        nav > a:hover{
+            background-color: chartreuse;
+        }
+
+        nav > a:active{
+            background-color: cornsilk;
+        }
+
+        main{
+            background-color: rgb(252, 9, 252);
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 1PX 1PX 1PX rgb(0, 0, 0);
+            
+        }
+
+        article{
+            background-color: rgb(201, 11, 201);
+            text-indent: 20px;
+            text-align: justify;
+            margin: 10px 1px;
+            padding: 1px 10px;
+            box-shadow: 1PX 1PX 1PX rgb(0, 0, 0);
+            border-radius: 5px;
+        }
+        article > h2{
+            text-align: center;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 7px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+
+        h1{
+            text-align: center;
+        }
+        
+    </style>
+    <title>Grouping tags</title>
+</head>
+<body>
+    <header>
+        <div id='bola'>
+            <h1>SITE INCRÍVEL
+            </h1>
+        </div>
+        <nav>
+            <a href="#">geral</a>
+            <a href="#">desenvolvimento</a>
+            <a href="#">aplicaçoes</a>
+            <a href="#">direcionamento</a>
+        </nav>
+    </header>
+    <main>
+        <section id='assuntos'>
+
+        </section>
+        <section id='noticias'>
+            <article>
+                <h2>Lorems</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quos impedit ipsa minima fugit quod, ad eligendi dolores praesentium, ex doloremque ullam cum, saepe incidunt quo! Sapiente ipsum similique dolor.</p>
+                <aside>artigo feitro por lorem</aside>
+            </article>
+
+            <article>
+                <h2>Mais um lorem</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, saepe mollitia! Aliquid, praesentium necessitatibus tenetur, facilis a optio architecto distinctio illum repellat cupiditate ipsum voluptates aspernatur dolores adipisci numquam pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magni obcaecati vitae ipsa fugiat quasi debitis. Quod reiciendis, esse atque dolore dolor dolorum explicabo voluptas velit optio dolorem accusamus? Dolor.</p>
+                <aside>mesmo autor</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por mim.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'louis' ;
+    src: url('../fonts/Louis\ George\ Cafe.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'louis-bold';
+    src: url(../fonts/Louis-BoldItalic.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor0: #73396F;
+    --cor1: #8C4587;
+    --cor2: #8C5889;
+    --cor3: #BF9BBD;
+    --cor4: #F2F2F2;
+
+    --fonte-padrao: 'louis', cursive;
+    --font-titulo: 'louis-bold', cursive;
+}
+
+
+
+
+body{
+    font-family: var(--fonte-padrao);
+    font-size: 17px;
+    text-shadow: 0px 0px 3px --cor4;
+    background-color:var(--cor4);
+    
+    
+}
+
+h2{
+    font-family: var(--font-titulo);
+    color: var(--cor0);
+    padding: 10px;
+    font-size: 1.5em;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.253);
+ }
+
+p{
+    text-align: justify;
+    text-indent: 30px;
+}
+header{
+    background-image: url(../imagens/fundo-patas.png);
+    background-repeat:repeat;
+    background-position:bottom;
+    padding: 10px ;
+    margin: 0px -8px;
+}
+
+
+header > h1{
+    font-family: fantasy;
+    margin: 4px;
+
+}
+header > h1 > img{
+    width: 300px;
+    height: 159px;
+    display: table-column;
+    margin: auto;
+}
+header > nav{
+    background-color: var(--cor4);
+    box-shadow: 1px 1px 3px black;
+}
+
+header > nav > a{
+    font-family: monospace;
+    font-weight: bold;
+    text-decoration: none;
+    color:var(--cor1);
+    padding: 4px 10px;
+}
+header > nav > a:hover{
+    color:var(--cor3);
+}
+
+header > nav > a:active{
+    color: var(--cor4);
+}
+
+main{
+       background-color: var(--cor3);
+       padding: 10px;
+       margin: auto;
+       margin-bottom: 10px;
+       border: 21px;
+       border-bottom-right-radius: 10px;
+       border-bottom-left-radius: 10px;
+       min-width: 320px;
+       max-width: 800px;
+       box-shadow: 0px 0px 10px black;
+}
+
+main h2{
+    background-image: linear-gradient(to right, var(--cor2), transparent );
+}
+img {
+    width: 100%;
+}
+
+main > section{
+    padding: 10px;
+}
+main > section > p{
+    padding: 10px;
+}
+
+main  aside{
+    padding: 10px;
+
+}
+
+section > picture > img{
+    padding: 10px;
+}
+div.video{
+    position: relative;
+    height: 0px;
+    margin-left: -5px;
+    margin-right: -3px;
+    margin-bottom: 13px;
+    padding-bottom: 61%;
+    
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    box-shadow: 1px 1px 3px black;
+}
+
+section.diferente{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+section.diferente h2{
+    color: var(--cor4);
+    
+}
+
+section.diferente ul{
+    list-style-position: inside;
+    list-style-type: '🐶\00a0\00a0';
+    
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 7px;
+    margin: 0px -8px;
+}
+footer > p{
+
+}
